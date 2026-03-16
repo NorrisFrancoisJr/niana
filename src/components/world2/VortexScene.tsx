@@ -93,7 +93,7 @@ export default function VortexScene({ progress }: VortexSceneProps) {
       {/* Custom Memory World Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
-        style={{ backgroundImage: 'url(/vortex-bg.webp)' }}
+        style={{ backgroundImage: 'url(/vortex-bg.jpg)' }}
       />
       
       {/* We keep this container for potential future depth masking over the NIANA text, but leave it transparent for now */}
