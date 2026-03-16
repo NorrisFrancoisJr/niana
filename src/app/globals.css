@@ -1,26 +1,90 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import "tailwindcss";
+
+@theme {
+  --color-warm-paper: #F9F7F2;
+  --color-deep-charcoal: #1A1A1A;
+  --color-muted-gold: #C5A059;
+  --color-soft-sand: #E2D1C3;
+  --color-gallery-mist: #D9D9D9;
+
+  --color-background: var(--color-warm-paper);
+  --color-foreground: var(--color-deep-charcoal);
+  --font-sans: var(--font-inter), sans-serif;
+  --font-serif: var(--font-playfair), serif;
+  --font-mono: var(--font-ibm-plex), monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root {
+  --background: #F9F7F2;
+  --foreground: #1A1A1A;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1A1A1A;
+    --foreground: #F9F7F2;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  cursor: none; /* Hide default for custom probe */
+}
+
+@layer base {
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    mix-blend-mode: overlay;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/20 backdrop-blur-md border border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.05)];
+  }
+
+  /* Structural Data-Load Effect */
+  .wireframe-text {
+    color: transparent !important;
+    -webkit-text-stroke: 1px rgba(201, 224, 255, 0.4);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .wireframe-text.rendered {
+    color: #F4F8FF !important;
+    -webkit-text-stroke: 1px transparent;
+    text-shadow: 0 0 20px rgba(106, 169, 255, 0.4);
+  }
+
+  /* High-fashion typography utilities */
+  .editorial-heading {
+    @apply font-serif italic tracking-tighter leading-[0.75];
+    text-transform: uppercase;
+  }
+  
+  .mono-label {
+    @apply font-mono uppercase tracking-[0.4em] text-[9px] text-deep-charcoal/30;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass-lens {
+    @apply backdrop-blur-xl bg-white/5 border border-white/10 shadow-2xl;
+  }
 }

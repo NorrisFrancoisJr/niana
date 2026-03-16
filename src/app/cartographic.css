@@ -1,0 +1,207 @@
+.cartographic-world {
+  /* Scope everything to prevent bleed */
+  position: relative;
+  width: 100%;
+  background-color: #F4EDDD; /* Ironhill off-white paper bg */
+  color: #344128; /* Ironhill dark green/charcoal text */
+  overflow: hidden;
+  z-index: 20; /* Sit above the previous sections cleanly */
+}
+
+/* 
+  =========================================
+  1. SVG Path Drawing Mechanics
+  =========================================
+*/
+.cartographic-world .svg-path {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.15; /* Subtle background map line */
+}
+
+.cartographic-world .path-drawing {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* 
+  =========================================
+  2. Character / Narrative Reveal Blocks
+  =========================================
+*/
+/* 
+  =========================================
+  2. Character / Narrative Reveal Blocks
+  =========================================
+*/
+.cartographic-world .character-reveal {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Long vertical breathing room */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh 5vw;
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 10;
+}
+
+/* 
+ * TYPOGRAPHY SYSTEM (PASS 6) 
+ * High-End Editorial Approach mixing Serif and Sans
+ */
+
+/* 1. Hero Text Scale */
+.cartographic-world .character-reveal__text {
+  position: relative;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: clamp(3rem, 6vw, 110px); /* Massive, bold, spacious */
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.02em; /* Tighter letter spacing on large headlines */
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* 2. Secondary Display Lines (used for bold keyword anchors in BodyCopy) */
+.cartographic-world .text-secondary-display {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(2rem, 4vw, 60px);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+/* 3. Narrative Editorial Text (Long-form) */
+.cartographic-world .body-copy p {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: clamp(1.25rem, 1.5vw, 26px);
+  line-height: 1.5; /* Loose, editorial tracking */
+  color: #344128;
+  opacity: 0;
+  margin-bottom: 1.5rem;
+}
+
+/* Alignment Modifiers */
+.cartographic-world .align-left .character-reveal__text {
+  text-align: left;
+}
+
+.cartographic-world .align-right .character-reveal__text {
+  text-align: right;
+}
+
+.cartographic-world .align-center .character-reveal__text {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cartographic-world .character-reveal__char {
+  display: inline; /* Changed to block-level inline for native word-wrapping */
+  color: #CFD0C0; /* Inactive color before GSAP fill */
+}
+
+/* Paragraph Body Copy */
+.cartographic-world .body-copy-wrapper {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+}
+
+.cartographic-world .body-copy {
+  max-width: 500px;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-transform: none;
+  color: #344128;
+  text-align: left;
+  opacity: 0.8;
+}
+
+.cartographic-world .body-copy p {
+  margin-bottom: 1.5rem;
+}
+
+/* 
+  =========================================
+  3. Artifact Cards
+  =========================================
+*/
+.cartographic-world .cards {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5; /* Behind the text */
+}
+
+.cartographic-world .card {
+  position: absolute;
+  max-width: 300px;
+  width: 25vw;
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1));
+}
+
+/* Specific card positioning placeholders (will be animated via GSAP) */
+.cartographic-world .card-1 {
+  top: 20%;
+  left: 10%;
+  transform: rotate(-12deg);
+}
+
+.cartographic-world .card-2 {
+  top: 60%;
+  right: 15%;
+  transform: rotate(8deg);
+}
+
+.cartographic-world .card-3 {
+  bottom: 10%;
+  left: 20%;
+  transform: rotate(-5deg);
+}
+
+/* 
+  =========================================
+  4. Micro-Captions (Quiet Metadata)
+  =========================================
+*/
+/* Micro Captions */
+.cartographic-world .micro-caption-wrapper {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 20;
+}
+
+.cartographic-world .micro-caption {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em; /* Looser spacing on micro captions */
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: #344128;
+  opacity: 0.55;
+  white-space: pre-wrap;
+  text-align: left;
+}
