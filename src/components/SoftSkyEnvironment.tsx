@@ -288,7 +288,7 @@ export default function SoftSkyEnvironment({ progress }: { progress: number }) {
             ref={fg6Ref}
             src="/tree/Flamboyant_leaves_1_(4385126884)%20copy.webp" 
             alt="" 
-            className="absolute top-[20%] left-[-20%] w-[70vw] max-w-[1100px] 2xl:max-w-none object-contain blur-[24px] brightness-110"
+            className="absolute top-[-15%] left-[-20%] w-[70vw] max-w-[1100px] 2xl:max-w-none object-contain blur-[24px] brightness-110"
             loading="eager"
             fetchPriority="high"
           />
@@ -306,7 +306,7 @@ export default function SoftSkyEnvironment({ progress }: { progress: number }) {
             ref={fg3Ref}
             src="/tree/piece1.webp" 
             alt="" 
-            className="absolute top-[45%] left-[-15%] w-[40vw] max-w-[700px] 2xl:max-w-none object-contain blur-[16px] brightness-110"
+            className="absolute top-[-10%] left-[-15%] w-[40vw] max-w-[700px] 2xl:max-w-none object-contain blur-[16px] brightness-110"
             loading="eager"
             fetchPriority="high"
           />
