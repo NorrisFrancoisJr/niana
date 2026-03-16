@@ -132,7 +132,6 @@
   line-height: 1.6;
   text-transform: none;
   color: #344128;
-  text-align: left;
   opacity: 0.8;
 }
 
@@ -203,5 +202,5 @@
   color: #344128;
   opacity: 0.55;
   white-space: pre-wrap;
-  text-align: left;
+  opacity: 0.55;
 }

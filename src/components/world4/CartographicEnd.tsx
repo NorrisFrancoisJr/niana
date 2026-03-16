@@ -77,10 +77,10 @@ export default function CartographicEnd() {
         </div>
       ),
       images: [
-        { src: "/cartographic/frame-3/6bdb65cd-5089-42ad-8eeb-fdc240f6a1f5.webp", className: "w-[18vw] max-w-[220px] left-[5%] top-[10%] -rotate-3", side: "left", delay: 0 },
-        { src: "/cartographic/frame-3/893b2f3f-1fce-46af-8623-139090801ad5.webp", className: "w-[14vw] max-w-[170px] left-[28%] top-[30%] rotate-2", side: "left", delay: 0.2 },
-        { src: "/cartographic/frame-3/IMG_2147.webp", className: "w-[16vw] max-w-[190px] left-[8%] top-[55%] rotate-4", side: "left", delay: 0.4 },
-        { src: "/cartographic/frame-3/b8bf1162-8a2b-4ae5-a8b9-ce0d8188c4a7.webp", className: "w-[15vw] max-w-[180px] left-[25%] top-[75%] -rotate-6", side: "left", delay: 0.6 }
+        { src: "/cartographic/frame-3/6bdb65cd-5089-42ad-8eeb-fdc240f6a1f5.webp", className: "w-[15vw] max-w-[180px] left-[2%] top-[5%] -rotate-3", side: "left", delay: 0 },
+        { src: "/cartographic/frame-3/893b2f3f-1fce-46af-8623-139090801ad5.webp", className: "w-[12vw] max-w-[140px] left-[5%] top-[40%] rotate-2", side: "left", delay: 0.2 },
+        { src: "/cartographic/frame-3/IMG_2147.webp", className: "w-[14vw] max-w-[170px] left-[1%] top-[70%] rotate-4", side: "left", delay: 0.4 },
+        { src: "/cartographic/frame-3/b8bf1162-8a2b-4ae5-a8b9-ce0d8188c4a7.webp", className: "w-[13vw] max-w-[150px] left-[8%] top-[85%] -rotate-6", side: "left", delay: 0.6 }
       ],
       captions: [
         { label: "FIELD NOTE", text: "learning how your mind works", className: "bottom-[-10%] right-[15%]" },
@@ -139,9 +139,6 @@ export default function CartographicEnd() {
       hasBody: true,
       bodyCopy: (
         <div className="flex flex-col items-center gap-2 mt-12">
-          <p className="2xl:text-2xl">You're strong.</p>
-          <p className="mb-6">Independent.</p>
-          
           <p className="mt-4">And I want to keep learning you.</p>
           <p className="mt-4 text-[#344128] italic font-serif text-2xl">Layer by layer.</p>
           <p className="text-[#344128] italic font-serif text-2xl">Day by day.</p>
@@ -332,11 +329,12 @@ export default function CartographicEnd() {
           }, 0.5); 
 
           // 4c. FINAL PURGE: Fade everything from Frame 4 out before Pin release
+          // Simplified to only occur when near the very end to prevent "missing text"
           tl.to([set1, set2, node4.querySelectorAll('.character-reveal')], {
             opacity: 0,
             duration: 0.5,
             ease: "power2.in"
-          }, 1.3);
+          }, 1.8); // Shifted later in the sequence
         }
       }
 
@@ -351,7 +349,7 @@ export default function CartographicEnd() {
         // Toggle hard visibility with ScrollTrigger events
         ScrollTrigger.create({
           trigger: node5,
-          start: "top 100%",
+          start: "top 20%",
           onEnter: () => gsap.set(previousElements, { display: 'none' }),
           onLeaveBack: () => gsap.set(previousElements, { display: 'block' }),
         });
@@ -494,7 +492,7 @@ export default function CartographicEnd() {
           </div>
 
           {/* 2. Text Layer: Second in DOM = Topmost Layer */}
-          <div className="character-reveal absolute top-0 left-0 w-full pointer-events-auto" style={{ zIndex: 10 }}>
+          <div className="character-reveal absolute top-0 left-0 w-full pointer-events-auto" style={{ zIndex: 50 }}>
             <div className={`relative w-[90vw] md:w-[85vw] mx-auto ${node.align === 'left' ? 'text-left' : node.align === 'right' ? 'text-right' : 'text-center'}`}>
               <div className={`character-reveal__text inline-block break-words ${node.id === 'node-5' ? 'text-[6rem] md:text-[14rem] leading-[0.8] tracking-tighter' : ''}`}>
                 {splitTextToSpans(node.text)}
@@ -503,7 +501,7 @@ export default function CartographicEnd() {
             
             {node.hasBody && node.bodyCopy && (
               <div className={`body-copy-wrapper flex w-[90vw] md:w-[85vw] mx-auto relative z-[100] ${node.align === 'left' ? 'justify-start' : node.align === 'right' ? 'justify-end' : 'justify-center' }`}>
-                <div className={`body-copy max-w-lg mt-8 text-[1.1rem] ${node.align === 'left' ? 'text-left' : node.align === 'right' ? 'text-left' : 'text-center'}`}>
+                <div className={`body-copy max-w-lg mt-8 text-[1.1rem] lg:text-[1.3rem] ${node.align === 'left' ? 'text-left' : node.align === 'right' ? 'text-right' : 'text-center'}`}>
                   {node.bodyCopy}
                 </div>
               </div>
