@@ -126,26 +126,29 @@ export default function SoftSkyEnvironment({ progress }: { progress: number }) {
         {/* 2. Far Clouds (Slow drift, softly blurred) */}
         <div ref={cloudFarRef} className="absolute -inset-[20vw] z-20 opacity-[0.6]">
           <div className="w-full h-full animate-[driftCloud_40s_linear_infinite]">
-             <div className="absolute top-[10%] left-[10%] w-[50vw] h-[50vw] rounded-full blur-[80px]" style={{ background: 'radial-gradient(circle, #FFFFFF 0%, rgba(255,255,255,0) 70%)' }} />
-             <div className="absolute top-[30%] left-[50%] w-[60vw] h-[60vw] rounded-full blur-[100px]" style={{ background: 'radial-gradient(circle, #FFFFFF 0%, rgba(255,255,255,0) 70%)' }} />
-             <div className="absolute top-[60%] left-[10%] w-[40vw] h-[40vw] rounded-full blur-[70px]" style={{ background: 'radial-gradient(circle, #FFFFFF 0%, rgba(255,255,255,0) 70%)' }} />
+             {/* Base layer deep clouds */}
+             <div className="absolute top-[10%] left-[10%] w-[50vw] h-[50vw] rounded-full" style={{ background: 'radial-gradient(circle, #FFFFFF 0%, rgba(255,255,255,0) 70%)' }} />
+             <div className="absolute top-[30%] left-[50%] w-[60vw] h-[60vw] rounded-full" style={{ background: 'radial-gradient(circle, #FFFFFF 0%, rgba(255,255,255,0) 70%)' }} />
+             <div className="absolute top-[60%] left-[10%] w-[40vw] h-[40vw] rounded-full" style={{ background: 'radial-gradient(circle, #FFFFFF 0%, rgba(255,255,255,0) 70%)' }} />
           </div>
         </div>
 
         {/* 3. Mid Clouds (Medium drift, brighter and denser) */}
         <div ref={cloudMidRef} className="absolute -inset-[15vw] z-30 opacity-[0.8]">
           <div className="w-full h-full animate-[driftCloud_25s_linear_infinite_reverse]">
-             <div className="absolute top-[50%] left-[-10%] w-[50vw] h-[40vw] rounded-full blur-[90px]" style={{ background: 'radial-gradient(circle, #FFFFFF 0%, rgba(255,255,255,0) 70%)' }} />
-             <div className="absolute top-[-10%] left-[40%] w-[45vw] h-[35vw] rounded-full blur-[80px]" style={{ background: 'radial-gradient(circle, #FFFFFF 0%, rgba(255,255,255,0) 70%)' }} />
-             <div className="absolute top-[60%] left-[70%] w-[50vw] h-[40vw] rounded-full blur-[80px]" style={{ background: 'radial-gradient(circle, #FFFFFF 0%, rgba(255,255,255,0) 70%)' }} />
+             {/* Mid layer fluffy clouds */}
+             <div className="absolute top-[50%] left-[-10%] w-[50vw] h-[40vw] rounded-full" style={{ background: 'radial-gradient(circle, #FFFFFF 0%, rgba(255,255,255,0) 70%)' }} />
+             <div className="absolute top-[-10%] left-[40%] w-[45vw] h-[35vw] rounded-full" style={{ background: 'radial-gradient(circle, #FFFFFF 0%, rgba(255,255,255,0) 70%)' }} />
+             <div className="absolute top-[60%] left-[70%] w-[50vw] h-[40vw] rounded-full" style={{ background: 'radial-gradient(circle, #FFFFFF 0%, rgba(255,255,255,0) 70%)' }} />
           </div>
         </div>
 
         {/* 4. Near Foreground Clouds (Fastest drift, framing the scene) */}
         <div ref={cloudNearRef} className="absolute -inset-[10vw] z-40 opacity-95 mix-blend-screen">
           <div className="w-full h-full animate-[driftCloud_15s_linear_infinite]">
-             <div className="absolute top-[-20%] left-[65%] w-[80vw] h-[60vw] rounded-full blur-[120px]" style={{ background: 'radial-gradient(circle, #FFFFFF 0%, rgba(255,255,255,0) 70%)' }} />
-             <div className="absolute top-[60%] left-[-15%] w-[70vw] h-[60vw] rounded-full blur-[100px]" style={{ background: 'radial-gradient(circle, #FFFFFF 0%, rgba(255,255,255,0) 70%)' }} />
+             {/* Foreground passing clouds (Screen blend for brightness) */}
+             <div className="absolute top-[-20%] left-[65%] w-[80vw] h-[60vw] rounded-full" style={{ background: 'radial-gradient(circle, #FFFFFF 0%, rgba(255,255,255,0) 70%)' }} />
+             <div className="absolute top-[60%] left-[-15%] w-[70vw] h-[60vw] rounded-full" style={{ background: 'radial-gradient(circle, #FFFFFF 0%, rgba(255,255,255,0) 70%)' }} />
           </div>
         </div>
 

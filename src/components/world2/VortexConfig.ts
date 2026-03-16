@@ -1,8 +1,10 @@
 // Configuration parameters for the 3D Vortex Scene
+const getIsMobile = () => typeof window !== 'undefined' && window.innerWidth < 768;
+
 export const VortexConfig = {
   // --- Architecture ---
-  NUM_TRAILS: 6, // Number of radial spline arms
-  PLANES_PER_TRAIL: 12, // How many images exist simultaneously per trail
+  get NUM_TRAILS() { return getIsMobile() ? 3 : 6; }, // Number of radial spline arms
+  get PLANES_PER_TRAIL() { return getIsMobile() ? 5 : 12; }, // How many images exist simultaneously per trail
 
   // --- Timing & Flow ---
   BASE_SPEED: 0.05, // Base progress increment per second (e.g. 0.05 = ~20s total duration)

@@ -53,9 +53,9 @@ export default function RefractionOverlay() {
       <div className="absolute inset-0 bg-gradient-to-tr from-warm-ivory/30 via-transparent to-pale-stone/20 mix-blend-soft-light" />
       
       {/* Living Atmospheric Layers */}
-      <div className="bloom-layer-1 atmospheric-core absolute top-[-10%] left-[-10%] w-[80vw] h-[80vw] rounded-full bg-soft-gold/15 blur-[160px] opacity-40 mix-blend-screen" />
-      <div className="bloom-layer-2 absolute bottom-[-20%] right-[-10%] w-[90vw] h-[90vw] rounded-full bg-blush-sand/20 blur-[200px] opacity-30 mix-blend-multiply" />
-      <div className="bloom-layer-3 absolute top-[30%] left-[40%] w-[60vw] h-[60vw] rounded-full bg-silver-mist/10 blur-[140px] opacity-25 mix-blend-overlay" />
+      <div className="bloom-layer-1 atmospheric-core absolute top-[-10%] left-[-10%] w-[80vw] h-[80vw] rounded-full bg-soft-gold/15 opacity-40 mix-blend-screen" />
+      <div className="bloom-layer-2 absolute bottom-[-20%] right-[-10%] w-[90vw] h-[90vw] rounded-full bg-blush-sand/20 opacity-30 mix-blend-multiply" />
+      <div className="bloom-layer-3 absolute top-[30%] left-[40%] w-[60vw] h-[60vw] rounded-full bg-silver-mist/10 opacity-25 mix-blend-overlay" />
 
       {/* Glass / Refraction Simulation Layer */}
       <div className="absolute inset-0 backdrop-blur-[2px] opacity-50" />
