@@ -196,14 +196,14 @@ export default function SoftSkyEnvironment({ progress }: { progress: number }) {
             ref={fg8Ref}
             src="/tree/TOP.webp" 
             alt="" 
-            className="absolute top-[-10%] right-[-15%] w-[80vw] max-w-[1500px] object-cover md:blur-[2px] brightness-105"
+            className="absolute top-[-10%] right-[-15%] w-[80vw] max-w-[1500px] object-cover blur-[2px] brightness-105"
           />
           {/* Top Canopy Left Overlap (Flipped) */}
           <img 
             ref={fg9Ref}
             src="/tree/TOP.webp" 
             alt="" 
-            className="absolute top-[-15%] left-[-20%] w-[90vw] max-w-[1600px] object-cover md:blur-[5px] brightness-95 scale-x-[-1]"
+            className="absolute top-[-15%] left-[-20%] w-[90vw] max-w-[1600px] object-cover blur-[5px] brightness-95 scale-x-[-1]"
           />
           
           {/* Floating pieces around top edges */}
@@ -211,7 +211,7 @@ export default function SoftSkyEnvironment({ progress }: { progress: number }) {
             ref={fg2Ref}
             src="/tree/littleree.webp" 
             alt="" 
-            className="absolute top-[5%] left-[-25%] w-[60vw] max-w-[900px] object-contain md:blur-[12px] brightness-105 drop-shadow-lg"
+            className="absolute top-[5%] left-[-25%] w-[60vw] max-w-[900px] object-contain blur-[12px] brightness-105 drop-shadow-lg"
             style={{ transform: 'rotate(25deg)' }}
           />
 
@@ -226,7 +226,7 @@ export default function SoftSkyEnvironment({ progress }: { progress: number }) {
             ref={fg1Ref}
             src="/tree/big tree.webp" 
             alt="" 
-            className="absolute bottom-[-10%] right-[-10%] w-[75vw] md:w-[60vw] max-w-[1200px] object-contain md:blur-[1px] brightness-110 drop-shadow-2xl"
+            className="absolute bottom-[-10%] right-[-10%] w-[75vw] md:w-[60vw] max-w-[1200px] object-contain blur-[1px] brightness-110 drop-shadow-2xl"
           />
 
           {/* VIS Photo Bottom Right Backfill to fix gaps - Hard edge pushed way off screen */}
@@ -234,7 +234,7 @@ export default function SoftSkyEnvironment({ progress }: { progress: number }) {
             ref={fg14Ref}
             src="/tree/VIS%20Photo%203%20Flamboyant%20article%20August%2014%202020%20copy.webp" 
             alt="" 
-            className="absolute bottom-[-20%] right-[-20%] w-[80vw] max-w-[1400px] object-cover md:blur-[8px] brightness-95 scale-x-[-1]"
+            className="absolute bottom-[-20%] right-[-20%] w-[80vw] max-w-[1400px] object-cover blur-[8px] brightness-95 scale-x-[-1]"
           />
           
           {/* MORE RED: Extra 'piece 2' instances along the bottom edge */}
@@ -243,7 +243,7 @@ export default function SoftSkyEnvironment({ progress }: { progress: number }) {
             ref={fg16Ref}
             src="/tree/oiece%202.webp" 
             alt="" 
-            className="absolute bottom-[-15%] left-[5%] w-[55vw] max-w-[900px] object-contain md:blur-[12px] brightness-105 drop-shadow-xl"
+            className="absolute bottom-[-15%] left-[5%] w-[55vw] max-w-[900px] object-contain blur-[12px] brightness-105 drop-shadow-xl"
             style={{ transform: 'rotate(15deg)' }}
           />
           {/* Extra Red 2 - Bottom Center Right */}
@@ -251,7 +251,7 @@ export default function SoftSkyEnvironment({ progress }: { progress: number }) {
             ref={fg17Ref}
             src="/tree/oiece%202.webp" 
             alt="" 
-            className="absolute bottom-[-25%] right-[5%] w-[60vw] max-w-[1000px] object-contain md:blur-[14px] brightness-110 drop-shadow-lg"
+            className="absolute bottom-[-25%] right-[5%] w-[60vw] max-w-[1000px] object-contain blur-[14px] brightness-110 drop-shadow-lg"
             style={{ transform: 'rotate(-25deg)' }}
           />
           {/* Extra Red 3 - Bottom Far Left (tucked behind) */}
@@ -259,7 +259,7 @@ export default function SoftSkyEnvironment({ progress }: { progress: number }) {
             ref={fg18Ref}
             src="/tree/oiece%202.webp" 
             alt="" 
-            className="absolute bottom-[-30%] left-[-25%] w-[70vw] max-w-[1200px] object-contain md:blur-[18px] brightness-100"
+            className="absolute bottom-[-30%] left-[-25%] w-[70vw] max-w-[1200px] object-contain blur-[18px] brightness-100"
             style={{ transform: 'rotate(45deg)' }}
           />
           {/* Extra Red 4 - Bottom Mid Right Background */}
@@ -267,7 +267,7 @@ export default function SoftSkyEnvironment({ progress }: { progress: number }) {
             ref={fg19Ref}
             src="/tree/oiece%202.webp" 
             alt="" 
-            className="absolute bottom-[-30%] right-[15%] w-[35vw] max-w-[700px] object-contain md:blur-[8px] brightness-105"
+            className="absolute bottom-[-30%] right-[15%] w-[35vw] max-w-[700px] object-contain blur-[8px] brightness-105"
             style={{ transform: 'rotate(-10deg) scale-x-[-1]' }}
           />
 
@@ -279,35 +279,35 @@ export default function SoftSkyEnvironment({ progress }: { progress: number }) {
             ref={fg6Ref}
             src="/tree/Flamboyant_leaves_1_(4385126884)%20copy.webp" 
             alt="" 
-            className="absolute top-[-15%] left-[-20%] w-[70vw] max-w-[1100px] object-contain md:blur-[24px] brightness-110"
+            className="absolute top-[-15%] left-[-20%] w-[70vw] max-w-[1100px] object-contain blur-[24px] brightness-110"
           />
           {/* Out of focus foreground piece originally crossing middle, lowered out of the way */}
           <img 
             ref={fg7Ref}
             src="/tree/shutterstock_2461766211_1280x%20copy.webp" 
             alt="" 
-            className="absolute bottom-[-10%] right-[-15%] w-[50vw] max-w-[900px] object-contain md:blur-[28px] brightness-115 scale-[-1]"
+            className="absolute bottom-[-10%] right-[-15%] w-[50vw] max-w-[900px] object-contain blur-[28px] brightness-115 scale-[-1]"
           />
           {/* Piece 1 - out of focus mid left */}
           <img 
             ref={fg3Ref}
             src="/tree/piece1.webp" 
             alt="" 
-            className="absolute top-[-10%] left-[-15%] w-[40vw] max-w-[700px] object-contain md:blur-[16px] brightness-110"
+            className="absolute top-[-10%] left-[-15%] w-[40vw] max-w-[700px] object-contain blur-[16px] brightness-110"
           />
           {/* Piece 2 - middle right crossing */}
           <img 
             ref={fg4Ref}
             src="/tree/oiece%202.webp" 
             alt="" 
-            className="absolute top-[45%] right-[-25%] w-[35vw] max-w-[600px] object-contain md:blur-[18px] brightness-100"
+            className="absolute top-[45%] right-[-25%] w-[35vw] max-w-[600px] object-contain blur-[18px] brightness-100"
           />
           {/* Piece 3 - top far right edge */}
           <img 
             ref={fg5Ref}
             src="/tree/piece%203.webp" 
             alt="" 
-            className="absolute top-[5%] right-[-15%] w-[40vw] max-w-[700px] object-contain md:blur-[10px] brightness-105"
+            className="absolute top-[5%] right-[-15%] w-[40vw] max-w-[700px] object-contain blur-[10px] brightness-105"
           />
         </div>
       )}
