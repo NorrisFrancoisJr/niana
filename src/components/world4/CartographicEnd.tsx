@@ -40,17 +40,17 @@ export default function CartographicEnd() {
       bodyCopy: (
         <>
           {/* Rhythmic Setup */}
-          <p className="max-w-[500px] mb-2 text-2xl">But once I got to know you</p>
-          <p className="max-w-[500px] mb-8 font-sans font-medium text-[#344128] text-3xl">and how you think...</p>
+          <p className="max-w-[500px] 2xl:max-w-[800px] mb-2 text-2xl 2xl:text-4xl">But once I got to know you</p>
+          <p className="max-w-[500px] 2xl:max-w-[800px] mb-8 font-sans font-medium text-[#344128] text-3xl 2xl:text-5xl">and how you think...</p>
           
-          <p className="max-w-[500px] text-lg mt-6">I was so happy to learn how we aligned.</p>
-          <p className="max-w-[500px] text-lg font-serif italic">"She sees the world how I see it."</p>
+          <p className="max-w-[500px] 2xl:max-w-[800px] text-lg 2xl:text-2xl mt-6">I was so happy to learn how we aligned.</p>
+          <p className="max-w-[500px] 2xl:max-w-[800px] text-lg 2xl:text-2xl font-serif italic">"She sees the world how I see it."</p>
         </>
       ),
       images: [
-        { src: "/cartographic/frame-2/36044c77-baa1-4dfb-a6f7-64e9406d16a8.webp", className: "w-[20vw] max-w-[240px] right-[5%] top-[15%] rotate-6", side: "right", delay: 0 },
-        { src: "/cartographic/frame-2/71069727-f8ed-4999-b560-a8a4aea331af.webp", className: "w-[15vw] max-w-[180px] right-[28%] top-[45%] -rotate-3", side: "right", delay: 0.2 },
-        { src: "/cartographic/frame-2/IMG_2483.webp", className: "w-[18vw] max-w-[210px] right-[10%] top-[70%] rotate-3", side: "right", delay: 0.4 }
+        { src: "/cartographic/frame-2/36044c77-baa1-4dfb-a6f7-64e9406d16a8.webp", className: "w-[20vw] max-w-[240px] 2xl:max-w-none right-[5%] top-[15%] rotate-6", side: "right", delay: 0 },
+        { src: "/cartographic/frame-2/71069727-f8ed-4999-b560-a8a4aea331af.webp", className: "w-[15vw] max-w-[180px] 2xl:max-w-none right-[28%] top-[45%] -rotate-3", side: "right", delay: 0.2 },
+        { src: "/cartographic/frame-2/IMG_2483.webp", className: "w-[18vw] max-w-[210px] 2xl:max-w-none right-[10%] top-[70%] rotate-3", side: "right", delay: 0.4 }
       ],
       captions: [
         { label: "FIELD NOTE", text: "politics before romance", className: "top-[60%] right-[35%]" },
@@ -66,21 +66,21 @@ export default function CartographicEnd() {
       bodyCopy: (
         <div className="flex flex-col items-end gap-1 mt-12 mb-16">
           {/* Rhythmic Stacking */}
-          <span className="text-secondary-display text-[#344128]">A technologist.</span>
-          <span className="font-serif italic text-4xl text-[#344128] mb-8">An artist.</span>
+          <span className="text-secondary-display text-[#344128] 2xl:text-6xl text-right">A technologist.</span>
+          <span className="font-serif italic text-4xl 2xl:text-6xl text-[#344128] mb-8 text-right">An artist.</span>
           
-          <p className="max-w-[500px] mt-6">You love beautiful things and beautiful places.</p>
-          <p className="max-w-[500px]">You appreciate the finer things in life<br/>and you strive for more,</p>
-          <p className="max-w-[500px]">but you're still grounded enough<br/>to appreciate the simple things.</p>
-          <p className="max-w-[500px] mt-4">You're logical, rational, and analytical,</p>
-          <p className="max-w-[500px]">but you're also one of the most emotional<br/>and deeply feeling people I know.</p>
+          <p className="max-w-[500px] 2xl:max-w-[800px] 2xl:text-2xl mt-6">You love beautiful things and beautiful places.</p>
+          <p className="max-w-[500px] 2xl:max-w-[800px] 2xl:text-2xl">You appreciate the finer things in life<br/>and you strive for more,</p>
+          <p className="max-w-[500px] 2xl:max-w-[800px] 2xl:text-2xl">but you're still grounded enough<br/>to appreciate the simple things.</p>
+          <p className="max-w-[500px] 2xl:max-w-[800px] 2xl:text-2xl mt-4">You're logical, rational, and analytical,</p>
+          <p className="max-w-[500px] 2xl:max-w-[800px] 2xl:text-2xl">but you're also one of the most emotional<br/>and deeply feeling people I know.</p>
         </div>
       ),
       images: [
-        { src: "/cartographic/frame-3/6bdb65cd-5089-42ad-8eeb-fdc240f6a1f5.webp", className: "w-[18vw] max-w-[220px] left-[5%] top-[10%] -rotate-3", side: "left", delay: 0 },
-        { src: "/cartographic/frame-3/893b2f3f-1fce-46af-8623-139090801ad5.webp", className: "w-[14vw] max-w-[170px] left-[28%] top-[30%] rotate-2", side: "left", delay: 0.2 },
-        { src: "/cartographic/frame-3/IMG_2147.webp", className: "w-[16vw] max-w-[190px] left-[8%] top-[55%] rotate-4", side: "left", delay: 0.4 },
-        { src: "/cartographic/frame-3/b8bf1162-8a2b-4ae5-a8b9-ce0d8188c4a7.webp", className: "w-[15vw] max-w-[180px] left-[25%] top-[75%] -rotate-6", side: "left", delay: 0.6 }
+        { src: "/cartographic/frame-3/6bdb65cd-5089-42ad-8eeb-fdc240f6a1f5.webp", className: "w-[18vw] max-w-[220px] 2xl:max-w-none left-[5%] top-[10%] -rotate-3", side: "left", delay: 0 },
+        { src: "/cartographic/frame-3/893b2f3f-1fce-46af-8623-139090801ad5.webp", className: "w-[14vw] max-w-[170px] 2xl:max-w-none left-[28%] top-[30%] rotate-2", side: "left", delay: 0.2 },
+        { src: "/cartographic/frame-3/IMG_2147.webp", className: "w-[16vw] max-w-[190px] 2xl:max-w-none left-[8%] top-[55%] rotate-4", side: "left", delay: 0.4 },
+        { src: "/cartographic/frame-3/b8bf1162-8a2b-4ae5-a8b9-ce0d8188c4a7.webp", className: "w-[15vw] max-w-[180px] 2xl:max-w-none left-[25%] top-[75%] -rotate-6", side: "left", delay: 0.6 }
       ],
       captions: [
         { label: "FIELD NOTE", text: "learning how your mind works", className: "bottom-[-10%] right-[15%]" },
@@ -95,32 +95,32 @@ export default function CartographicEnd() {
       hasBody: true,
       bodyCopy: (
         <div className="flex flex-col items-start gap-1 mt-8 mb-16">
-          <p className="mb-8">You pulled me into parts of life<br/>that I'd avoided.</p>
+          <p className="mb-8 2xl:text-2xl">You pulled me into parts of life<br/>that I'd avoided.</p>
           
           {/* Rhythmic Vertical Beats */}
-          <span className="text-secondary-display text-[#344128]">Dancing.</span>
-          <span className="text-secondary-display text-[#344128] ml-8">Partying.</span>
-          <span className="text-secondary-display text-[#344128] ml-16">Loving.</span>
-          <span className="font-serif italic text-5xl text-[#344128] mt-2 mb-8 ml-24">Passion.</span>
+          <span className="text-secondary-display text-[#344128] 2xl:text-6xl">Dancing.</span>
+          <span className="text-secondary-display text-[#344128] ml-8 2xl:text-6xl">Partying.</span>
+          <span className="text-secondary-display text-[#344128] ml-16 2xl:text-6xl">Loving.</span>
+          <span className="font-serif italic text-5xl 2xl:text-7xl text-[#344128] mt-2 mb-8 ml-24">Passion.</span>
 
-          <p className="mt-4">New cities.<br/>New hobbies.</p>
+          <p className="mt-4 2xl:text-2xl">New cities.<br/>New hobbies.</p>
 
-          <p className="mt-6">And my world got bigger.</p>
+          <p className="mt-6 2xl:text-2xl">And my world got bigger.</p>
         </div>
       ),
       images: [
         // Set 1: Dispersing images
-        { src: "/cartographic/frame-4/set-1/IMG_1802.webp", className: "w-[16vw] max-w-[200px] right-[15%] top-[15%] -rotate-6", side: "right", delay: 0 },
-        { src: "/cartographic/frame-4/set-1/IMG_20200127_104040.webp", className: "w-[20vw] max-w-[240px] right-[5%] top-[40%] rotate-2", side: "right", delay: 0.1 },
-        { src: "/cartographic/frame-4/set-1/IMG_20200823_165801.webp", className: "w-[14vw] max-w-[170px] right-[28%] top-[30%] rotate-6", side: "right", delay: 0.2 },
-        { src: "/cartographic/frame-4/set-1/IMG_9610.webp", className: "w-[15vw] max-w-[180px] right-[10%] top-[65%] -rotate-3", side: "right", delay: 0.3 }
+        { src: "/cartographic/frame-4/set-1/IMG_1802.webp", className: "w-[16vw] max-w-[200px] 2xl:max-w-none right-[15%] top-[15%] -rotate-6", side: "right", delay: 0 },
+        { src: "/cartographic/frame-4/set-1/IMG_20200127_104040.webp", className: "w-[20vw] max-w-[240px] 2xl:max-w-none right-[5%] top-[40%] rotate-2", side: "right", delay: 0.1 },
+        { src: "/cartographic/frame-4/set-1/IMG_20200823_165801.webp", className: "w-[14vw] max-w-[170px] 2xl:max-w-none right-[28%] top-[30%] rotate-6", side: "right", delay: 0.2 },
+        { src: "/cartographic/frame-4/set-1/IMG_9610.webp", className: "w-[15vw] max-w-[180px] 2xl:max-w-none right-[10%] top-[65%] -rotate-3", side: "right", delay: 0.3 }
       ],
       imagesSet2: [
         // Set 2: Revealing images
-        { src: "/cartographic/frame-4/set-2/IMG_2488.webp", className: "w-[18vw] max-w-[220px] left-[15%] top-[20%] rotate-4", side: "left", delay: 0 },
-        { src: "/cartographic/frame-4/set-2/IMG_2843.webp", className: "w-[15vw] max-w-[180px] right-[10%] top-[35%] -rotate-5", side: "right", delay: 0 },
-        { src: "/cartographic/frame-4/set-2/IMG_6614.webp", className: "w-[20vw] max-w-[240px] right-[15%] top-[60%] rotate-2", side: "right", delay: 0 },
-        { src: "/cartographic/frame-4/set-2/d13f80d4-7498-4a22-946e-418fc43f1b6f.webp", className: "w-[16vw] max-w-[200px] left-[12%] top-[65%] -rotate-6", side: "left", delay: 0 }
+        { src: "/cartographic/frame-4/set-2/IMG_2488.webp", className: "w-[18vw] max-w-[220px] 2xl:max-w-none left-[15%] top-[20%] rotate-4", side: "left", delay: 0 },
+        { src: "/cartographic/frame-4/set-2/IMG_2843.webp", className: "w-[15vw] max-w-[180px] 2xl:max-w-none right-[10%] top-[35%] -rotate-5", side: "right", delay: 0 },
+        { src: "/cartographic/frame-4/set-2/IMG_6614.webp", className: "w-[20vw] max-w-[240px] 2xl:max-w-none right-[15%] top-[60%] rotate-2", side: "right", delay: 0 },
+        { src: "/cartographic/frame-4/set-2/d13f80d4-7498-4a22-946e-418fc43f1b6f.webp", className: "w-[16vw] max-w-[200px] 2xl:max-w-none left-[12%] top-[65%] -rotate-6", side: "left", delay: 0 }
       ],
       captions: [
         { label: "FIELD NOTE", text: "first time seeing paris together", className: "top-[-5%] left-[10%]" },
@@ -139,12 +139,12 @@ export default function CartographicEnd() {
       hasBody: true,
       bodyCopy: (
         <div className="flex flex-col items-center gap-2 mt-12">
-          <p>You're strong.</p>
-          <p className="mb-6">Independent.</p>
+          <p className="2xl:text-2xl">You're strong.</p>
+          <p className="mb-6 2xl:text-2xl">Independent.</p>
           
-          <p className="mt-4">And I want to keep learning you.</p>
-          <p className="mt-4 text-[#344128] italic font-serif text-2xl">Layer by layer.</p>
-          <p className="text-[#344128] italic font-serif text-2xl">Day by day.</p>
+          <p className="mt-4 2xl:text-2xl">And I want to keep learning you.</p>
+          <p className="mt-4 text-[#344128] italic font-serif text-2xl 2xl:text-5xl">Layer by layer.</p>
+          <p className="text-[#344128] italic font-serif text-2xl 2xl:text-5xl">Day by day.</p>
         </div>
       ),
       images: [],
@@ -463,6 +463,8 @@ export default function CartographicEnd() {
                 className={`artifact-card absolute filter drop-shadow-xl ${img.className}`}
                 data-side={img.side}
                 data-delay={img.delay}
+                loading="eager"
+                fetchPriority="high"
               />
             ))}
             
@@ -476,6 +478,8 @@ export default function CartographicEnd() {
                 className={`artifact-card-set-2 absolute filter drop-shadow-xl opacity-0 scale-90 ${img.className}`}
                 data-side={img.side}
                 data-delay={img.delay}
+                loading="eager"
+                fetchPriority="high"
               />
             ))}
             
